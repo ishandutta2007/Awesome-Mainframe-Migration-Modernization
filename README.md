@@ -1,237 +1,164 @@
-# Awesome-Mainframe-Migration-Modernization
-
-## Top Mainframe Migration & Modernization Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Mainframe Migration, Code Refactoring & Self-Hosted Modernization Tools*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial mainframe modernization platforms** and **open-source projects** that help organizations migrate, refactor, or rehost legacy mainframe applications (COBOL, PL/I, Assembler, JCL) to modern cloud and distributed platforms.
-
-
-
-**Examples** include AWS Mainframe Modernization, Micro Focus (OpenText), Google Cloud Dual Run, Microsoft Azure Mainframe Modernization, TSRI, Astadia, LzLabs, Blu Age, Advanced (Modern Systems), and CloudFrame (the category leaders).
-
-
-
-**Open-source emphasis**: Mainframe modernization is anchored by **GnuCOBOL** as the most complete open-source COBOL compiler , with **z390** and **Hercules** providing portable mainframe emulation for testing and development . **mainframe-migration-toolkit** brings specification-led COBOL and JCL migration to PySpark . **QWICS** demonstrates a hybrid approach to rehosting transactional COBOL in Java EE using entirely open-source components . **GnuCOBOL-based testing frameworks** and **REXX interpreters** round out the ecosystem. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS Mainframe Modernization](https://aws.amazon.com/mainframe-modernization/)**  
-
-  **AWS's mainframe modernization service** — provides tools for analyzing, developing, and deploying mainframe applications on AWS managed runtimes . **Supports automated refactoring (Blu Age) and replatforming (Micro Focus/Rocket Software)** . **Note**: The managed runtime experience is **no longer open to new customers** as of November 7, 2025; the self-managed experience remains available . **Best for AWS-native mainframe migrations** .
-
-
-
-- **[Micro Focus (OpenText) Enterprise Suite](https://www.microfocus.com/)**  
-
-  **The enterprise standard for COBOL and PL/I modernization** — comprehensive analysis, development, test, and deployment solutions for IBM mainframe applications . **Supports deployment across mainframe, Linux, virtual, Docker, and cloud platforms** — the same application workload can run on host or cloud without rewrite . **Banca Popolare di Sondrio boosted developer productivity by 20%** using the solution . **Best for enterprises wanting to preserve COBOL investments while modernizing infrastructure** .
-
-
-
-- **[Google Cloud Dual Run](https://cloud.google.com/mainframe-dual-run)**  
-
-  **Google's mainframe modernization testing platform** — runs workloads simultaneously on existing mainframes and Google Cloud to compare behavior . **Enables real-time testing and rapid collection of performance and stability data** . **Best for risk-managed incremental migration** .
-
-
-
-- **[Microsoft Azure Mainframe Modernization](https://azure.microsoft.com/en-us/solutions/mainframe-modernization/)**  
-
-  **Microsoft's mainframe migration solutions** — supports rehosting, refactoring, and replatforming to Azure . **Raincode IMSql** rehosts IMS DB/DC applications on Azure with SQL Server as the hierarchical data store . **Best for Azure-native mainframe migrations** .
-
-
-
-- **[TSRI (JANUS Studio)](https://tsri.com/)**  
-
-  **AI-driven application modernization platform** — pairs deterministic AI with GenAI for 99.9X% automated conversion . **Supports 35+ legacy and modern languages** including COBOL, PL/I, Assembler, and more . **Named 2026 ISG Leader in Mainframe Modernization** . **Delivers cloud-ready code with code warranty and no license fees** . **Best for high-fidelity automated refactoring** .
-
-
-
-- **[Astadia (Amdocs)](https://www.astadia.com/)**  
-
-  **Mainframe migration factory and methodology** — automates code and data transformation with functional equivalence testing . **Tooling includes CodeTurn, DataTurn, TestMatch, and DataMatch** . **Migrated a global flooring manufacturer's 10+ million lines of COBOL to Azure with full functional equivalency** . **Best for large-scale automated migrations** .
-
-
-
-- **[LzLabs](https://www.lzlabs.com/)**  
-
-  **Software Defined Mainframe (SDM) platform** — enables incremental application-by-application migration . **Applications run natively in the SDM without rewriting** — preserves existing code and data . **Achieves up to 60% OpEx savings** with concurrent operation during migration . **Best for gradual, low-risk mainframe exit** .
-
-
-
-- **[CloudFrame Continuum](https://cloudframe.com/)**  
-
-  **Runtime-truth based modernization platform** — runs code first to capture actual execution behavior, then transforms with verified accuracy . **Three outcomes: Optimize (reduce MIPS in place), Run (lift to cloud), Modernize (convert to Java)** . **Savings can reach 80% or higher** on the Run path . **Best for evidence-based, auditable code transformation** .
-
-
-
-- **[Advanced (Modern Systems)](https://modernsystems.oneadvanced.com/)**  
-
-  **Automated refactoring and migration services** — converted The New York Times' mainframe to AWS with full functional equivalence . **Migrated COBOL to Java, VSAM to Oracle, CICS to Jetty/Apache-CXF, and JCL to Spring Batch** . **Best for proof-of-concept and pilot migrations** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### COBOL Compilers & Runtimes
-
-
-
-- **[GnuCOBOL](https://github.com/GnuCOBOL/gnucobol)**  
-
-  **The most complete and mature open-source COBOL compiler**, GPL-3.0 licensed with **1,500+ GitHub stars** . **COBOL frontend to the GNU C compiler** — translates COBOL to C, then compiles with gcc for high optimization . **Supports the same target architectures as gcc** — including mainframe Linux . **The foundation for open-source mainframe modernization** . **Best for compiling and testing COBOL applications** .
-
-
-
-- **[z390](https://github.com/z390development/z390)**  
-
-  **Portable mainframe assembler and emulator project**, open-source with **39 GitHub stars** . **Provides a complete mainframe development environment** for Assembler and COBOL . **Includes emulator, assembler, linker, and runtime libraries** . **Best for mainframe assembly development and testing** .
-
-
-
-### Mainframe Emulation & Testing
-
-
-
-- **[Hercules](https://github.com/hercules-390/hyperion)**  
-
-  **The main repository for the Aethra version of the Hercules emulator for IBM mainframes**, open-source with **22 GitHub stars** . **Emulates IBM System/370, ESA/390, and z/Architecture** . **Runs mainframe operating systems including z/OS, z/VM, and z/VSE** . **Best for mainframe emulation and testing** .
-
-
-
-- **[mainframe-migration-toolkit](https://pypi.org/project/mainframe-migration-toolkit/)**  
-
-  **Python tools and runtime support for specification-led COBOL and JCL migrations to PySpark**, open-source . **Initializes isolated migration workspaces, parses JCL and copybooks, converts sequential datasets, scaffolds PySpark jobs, and validates output against golden datasets** . **Supports Claude Code and Devin agent orchestration** . **Best for modernizing batch COBOL to PySpark** .
-
-
-
-- **[QWICS (Quick Web-Based Interactive COBOL Service)](https://github.com/pbrune1973/qwics)**  
-
-  **Open-source architecture for rehosting transactional COBOL in Java EE**, open-source . **Uses only open-source components**: GnuCOBOL, PostgreSQL, JBoss WildFly, and custom glue components . **Integrates COBOL programs as part of JTA transactions** — no proprietary TPM middleware required . **Supports mainframe-to-mainframe rehosting (e.g., to Linux)** . **Best for open-source COBOL rehosting** .
-
-
-
-### Mainframe Development & Testing Tools
-
-
-
-- **[Cobol Check](https://github.com/openmainframeproject/cobol-check)**  
-
-  **Testing framework for COBOL applications**, open-source with **80 GitHub stars** . **Unit testing framework specifically for COBOL** . **Best for COBOL unit testing** .
-
-
-
-- **[JCL Parser](https://github.com/openmainframeproject)** — JCL parsing tools for migration and testing .
-
-
-
-- **[Mainframe Disassembler in REXX](https://github.com/openmainframeproject)**  
-
-  **Mainframe disassembler written in REXX**, open-source . **Useful for sites that have lost source code to important executables** . **Best for reverse-engineering legacy code** .
-
-
-
-- **[ISPF Editor Emulator](https://github.com/openmainframeproject)**  
-
-  **Powerful editor and file manager that emulates the IBM mainframe ISPF editor**, open-source with **28 GitHub stars** . **Best for mainframe development environment simulation** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **KICKS** — CICS replacement for MVS 3.8 and z/OS, open-source with 43 GitHub stars .
-
-- **RAKF** — Resource Access Control Facility for MVS 3.8j, open-source .
-
-- **Jay Moseley MVS 3.8j sysgen automation** — MVS system generation automation, 71 GitHub stars .
-
-- **Rexx/XML** — XML parser in REXX running on mainframes and distributed systems .
-
-- **Awesome Mainframe** — Curated list of mainframe resources and projects, 79 GitHub stars .
-
-- **Tn3270 to Z Python library** — Python TN3270 library, 57 GitHub stars .
-
-- **c3270 Web frontend** — Web frontend for c3270 terminal emulator .
-
-
-
-**Frameworks for building custom mainframe modernization solutions**: Combine **GnuCOBOL** for open-source COBOL compilation and testing . Use **z390** and **Hercules** for mainframe emulation during development and migration validation . Deploy **mainframe-migration-toolkit** for specification-led COBOL-to-PySpark migrations . Choose **QWICS** for rehosting transactional COBOL in Java EE with only open-source components . Integrate **Cobol Check** for unit testing. Note that true enterprise mainframe modernization with automated refactoring, functional equivalence guarantees, and large-scale migration factory capabilities (AWS Mainframe Modernization, TSRI, Astadia, LzLabs) remains primarily commercial territory; open-source stacks provide strong compilation, emulation, and rehosting foundations that require integration for complete mainframe modernization.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Mainframe modernization involves migrating mission-critical systems that handle core business operations. **Plan for incremental migration with coexistence** — running mainframe and modernized workloads in parallel reduces risk .
-
-- **AWS Mainframe Modernization managed runtime is no longer available to new customers** as of November 7, 2025 . The self-managed experience remains available.
-
-- **Functional equivalence testing is critical** — allocate 70-80% of project time to testing, as demonstrated in The New York Times migration . Automated testing tools (TestMatch, DataMatch) verify behavioral and data equivalence .
-
-- **Talent continuity is a major risk** — mainframe skills are scarce and retiring. Modernization reduces key-person dependency through cross-training and documentation .
-
-- **License considerations**: GnuCOBOL uses GPL-3.0, z390 is open-source, Hercules is open-source, and mainframe-migration-toolkit is open-source. Verify licensing against your use case before committing .
-
-- The open-source ecosystem provides strong compilation, emulation, and rehosting foundations, but **automated refactoring, functional equivalence guarantees, and large-scale migration factory capabilities** remain primarily commercial offerings.
-
-
+# 🚀 Awesome Mainframe Migration & Modernization
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Mainframe Migration & Modernization Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mainframe-Migration-Modernization/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Mainframe-Migration-Modernization?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mainframe-Migration-Modernization/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Mainframe-Migration-Modernization?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mainframe-Migration-Modernization/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mainframe-Migration-Modernization/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+> 💡 **A curated ecosystem guide to commercial SaaS products, AI refactoring platforms, open-source compilers, and cloud rehosting frameworks for legacy IBM mainframe migration (COBOL, PL/I, Assembler, JCL, CICS, VSAM) to modern AWS, Azure, and Google Cloud infrastructures.**
 
+---
 
-**Made for mainframe architects, modernization engineers, and organizations seeking mainframe migration sovereignty.**
+## 📌 Table of Contents
+- [🌐 Sector Market Overview](#-sector-market-overview)
+- [🏢 Enterprise SaaS & Commercial Platforms](#-enterprise-saas--commercial-platforms)
+- [💻 Open-Source GitHub Repositories & Tools](#-open-source-github-repositories--tools)
+- [🛠 Modernization Strategies & Architectures](#-modernization-strategies--architectures)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [📜 Disclaimer](#-disclaimer)
 
-Let's make mainframe migration and modernization more open, transparent, and risk-managed.
+---
+
+## 🌐 Sector Market Overview
+
+> 📊 **Market Size & Structure**: The global Mainframe Modernization market is estimated at **~$8.4 Billion in 2025** and projected to expand to **~$15 Billion+ by 2030–2034** at a CAGR of ~9.5%. The market is **concentrated** among top cloud hyperscalers (Microsoft Azure, AWS, Google Cloud), legacy software consolidators (OpenText/Micro Focus, Amdocs/Astadia), and specialized automated refactoring providers (TSRI, CloudFrame, LzLabs).
+
+---
+
+## 🏢 Enterprise SaaS & Commercial Platforms
+
+Below is a comparative breakdown of leading commercial platforms for mainframe migration, automated code transformation, and cloud rehosting. Table entries are sorted by **Company Size / Valuation (Descending)**.
+
+| 🏢 Platform / Vendor | 🎯 Core Capabilities | 💰 Specific Starting Pricing | 🎁 Free Tier / Trial Limit | 📊 Company Size / Valuation |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Azure Mainframe Modernization](https://azure.microsoft.com/en-us/solutions/mainframe-modernization/)** | Rehost, refactor, and replatform IBM mainframe workloads to Azure. Integrates Raincode IMSql for IMS DB/DC to SQL Server migration. | Standard Pay-As-You-Go compute rates (e.g. D4s v5 ~$0.192/hr; Azure SQL Database from ~$0.015/vCore-hr). | **$200 Azure Credits** (valid 30 days) + 55+ services free for 12 months. | **~$3.1 Trillion** market cap ($245B+ annual revenue) |
+| **[Google Cloud Dual Run](https://cloud.google.com/mainframe-dual-run)** | Dual-execution shadow testing platform running live workloads concurrently on mainframe and Google Cloud for zero-risk validation. | Pay-as-you-go compute/storage rates (e.g. Compute Engine e2-standard-2 from ~$0.067/hr) + enterprise dual-run license. | **$300 Free Credits** for new accounts (valid 90 days) + 20+ free tier products. | **~$2.1 Trillion** market cap ($330B+ annual revenue) |
+| **[AWS Mainframe Modernization](https://aws.amazon.com/mainframe-modernization/)** | Automated refactoring (Blu Age) & replatforming managed runtime for COBOL, PL/I, and JCL on AWS infrastructure. | **~$0.31 per AWS CPU core/hour** for Blu Age Runtime + standard underlying EC2/EBS infrastructure usage. | **$200 AWS Sign-up Credits** + 750 free EC2 t2.micro/t3.micro hours/month for 12 months. | **~$2.0 Trillion** market cap ($570B+ annual revenue) |
+| **[Astadia (Amdocs)](https://www.astadia.com/)** | Mainframe Migration Factory with automated CodeTurn, DataTurn, TestMatch, and DataMatch functional equivalence engines. | Project-based scoping starting at **~$15,000–$50,000+** per migration pilot phase or per 100k LOC module. | **Free Initial Code Assessment** / 14-day discovery workspace audit. | **~$10.5 Billion** market cap ($4.9B+ annual revenue) |
+| **[Micro Focus (OpenText) Enterprise Suite](https://www.microfocus.com/)** | Enterprise-grade COBOL, PL/I development, test, and deployment platform for Linux, Docker, and hybrid cloud without rewrites. | Enterprise license starting at **~$2,500/core/year** or ~$0.45/vCore-hour on AWS/Azure Marketplace. | **30-Day Full-Featured Evaluation Trial** license for Enterprise Developer & Server. | **~$8.5 Billion** market cap ($5.8B+ annual revenue) |
+| **[TSRI (JANUS Studio)](https://tsri.com/)** | AI-driven deterministic refactoring platform converting 35+ legacy languages (COBOL, Assembler, PL/I) to modern Java/C# with 99.9X% accuracy. | Fixed-price refactoring starting at **~$0.15–$0.40 per line of code (LOC)** with code warranty. | **Free Initial Codebase Assessment** (up to 50k LOC analyzed) + 30-day pilot scoping. | **~$50M–$100M** estimated revenue (Private IT Leader) |
+| **[LzLabs (Software Defined Mainframe)](https://www.lzlabs.com/)** | Software Defined Mainframe (SDM) rehosting binary z/OS applications directly on modern Linux/cloud containers without rewriting. | Enterprise MIPS-reduction subscription starting at **~$10,000/month** or core-based annual software license. | **30-Day Sandbox / Proof-of-Concept** cloud environment (up to 5 MIPS allocation). | **~$30M–$50M** estimated revenue (Private Venture-Backed) |
+| **[CloudFrame Continuum](https://cloudframe.com/)** | Execution-truth modernization engine capturing runtime behavior to optimize MIPS, rehost COBOL, or refactor to Java. | Subscription pricing starting at **~$5,000/month** per application module or per MIPS saved. | **14-Day Risk-Free Assessment Trial** (up to 10 COBOL programs converted to Java). | **~$15M–$30M** estimated revenue (Private Enterprise SaaS) |
+| **[Advanced (Modern Systems)](https://modernsystems.oneadvanced.com/)** | End-to-end automated refactoring converting legacy COBOL, CICS, VSAM, and JCL into Java Spring Boot and cloud-native services. | Engagement milestones starting at **~$25,000** for assessment, discovery, and initial pilot transformation. | **Free Architectural Discovery Session** & 30-day proof-of-concept pilot. | **~$10M–$25M** estimated revenue (Private Managed Services Unit) |
+
+---
+
+## 💻 Open-Source GitHub Repositories & Tools
+
+Curated open-source projects, COBOL compilers, mainframe emulators, parser libraries, and AI modernization agents. Repositories are sorted by **GitHub Star Count (Descending)**.
+
+- **[COBOL Programming Course](https://github.com/openmainframeproject/cobol-programming-course)**  
+  [![Stars](https://img.shields.io/github/stars/openmainframeproject/cobol-programming-course?style=social)](https://github.com/openmainframeproject/cobol-programming-course/stargazers)  
+  ⚡ Comprehensive training materials, labs, and modern syntax guides for learning and modernizing enterprise COBOL, hosted by the Open Mainframe Project.
+
+- **[3270 Font](https://github.com/rbanffy/3270font)**  
+  [![Stars](https://img.shields.io/github/stars/rbanffy/3270font?style=social)](https://github.com/rbanffy/3270font/stargazers)  
+  🖥️ Monospaced retro font designed for terminal emulators and modern IDEs emulating IBM 3270 mainframe display terminals.
+
+- **[COBOL on Wheelchair](https://github.com/azac/cobol-on-wheelchair)**  
+  [![Stars](https://img.shields.io/github/stars/azac/cobol-on-wheelchair?style=social)](https://github.com/azac/cobol-on-wheelchair/stargazers)  
+  🌐 Micro web-framework written for COBOL, enabling legacy COBOL programs to serve modern REST APIs and HTTP microservices.
+
+- **[Node COBOL](https://github.com/IonicaBizau/node-cobol)**  
+  [![Stars](https://img.shields.io/github/stars/IonicaBizau/node-cobol?style=social)](https://github.com/IonicaBizau/node-cobol/stargazers)  
+  🌁 Bridge for Node.js allowing execution and integration of legacy COBOL program logic directly within modern Node/JavaScript microservices.
+
+- **[Hercules Mainframe Emulator](https://github.com/SDL-Hercules-390/hyperion)**  
+  [![Stars](https://img.shields.io/github/stars/SDL-Hercules-390/hyperion?style=social)](https://github.com/SDL-Hercules-390/hyperion/stargazers)  
+  ⚙️ Open-source software implementation of System/370, ESA/390, and 64-bit z/Architecture mainframe hardware, capable of running legacy z/OS, z/VM, and z/VSE operating systems.
+
+- **[AWS Mainframe Modernization CardDemo](https://github.com/aws-samples/aws-mainframe-modernization-carddemo)**  
+  [![Stars](https://img.shields.io/github/stars/aws-samples/aws-mainframe-modernization-carddemo?style=social)](https://github.com/aws-samples/aws-mainframe-modernization-carddemo/stargazers)  
+  💳 Comprehensive sample COBOL/CICS/VSAM credit card management application for benchmarking mainframe refactoring and replatforming on AWS.
+
+- **[OpenCobolIDE](https://github.com/OpenCobolIDE/OpenCobolIDE)**  
+  [![Stars](https://img.shields.io/github/stars/OpenCobolIDE/OpenCobolIDE?style=social)](https://github.com/OpenCobolIDE/OpenCobolIDE/stargazers)  
+  📝 Simple, cross-platform graphical IDE for COBOL development powered by GnuCOBOL and PyQode.
+
+- **[Otterkit COBOL](https://github.com/otterkit/otterkit-cobol)**  
+  [![Stars](https://img.shields.io/github/stars/otterkit/otterkit-cobol?style=social)](https://github.com/otterkit/otterkit-cobol/stargazers)  
+  🔧 Modern, open-source Standard COBOL compiler and runtime targeting 64-bit systems and C# .NET ecosystem.
+
+- **[Azure Legacy Modernization Agents](https://github.com/Azure-Samples/Legacy-Modernization-Agents)**  
+  [![Stars](https://img.shields.io/github/stars/Azure-Samples/Legacy-Modernization-Agents?style=social)](https://github.com/Azure-Samples/Legacy-Modernization-Agents/stargazers)  
+  🤖 AI-powered agent framework using Microsoft Agent Framework to automate COBOL-to-Java Quarkus modernization and dependency extraction.
+
+- **[Zowe Explorer VS Code Extension](https://github.com/zowe/zowe-explorer-vscode)**  
+  [![Stars](https://img.shields.io/github/stars/zowe/zowe-explorer-vscode?style=social)](https://github.com/zowe/zowe-explorer-vscode/stargazers)  
+  🔌 VS Code extension providing direct access to z/OS datasets, PDS members, USS files, and jobs on IBM mainframes.
+
+- **[Cobrix Parsing Engine](https://github.com/AbsaOSS/cobrix)**  
+  [![Stars](https://img.shields.io/github/stars/AbsaOSS/cobrix?style=social)](https://github.com/AbsaOSS/cobrix/stargazers)  
+  📊 Pure Scala/Spark library for parsing complex mainframe COBOL copybooks and binary EBCDIC data files directly in Apache Spark pipelines.
+
+- **[Zowe CLI](https://github.com/zowe/zowe-cli)**  
+  [![Stars](https://img.shields.io/github/stars/zowe/zowe-cli?style=social)](https://github.com/zowe/zowe-cli/stargazers)  
+  ⌨️ Command-line interface powering modern DevOps workflows, CI/CD pipelines, and automated interactions with mainframe services.
+
+- **[Cobol Check](https://github.com/openmainframeproject/cobol-check)**  
+  [![Stars](https://img.shields.io/github/stars/openmainframeproject/cobol-check?style=social)](https://github.com/openmainframeproject/cobol-check/stargazers)  
+  🧪 Automated unit testing framework for COBOL applications, bringing TDD practice to legacy batch and interactive programs.
+
+- **[z390 Portable Mainframe Assembler](https://github.com/z390development/z390)**  
+  [![Stars](https://img.shields.io/github/stars/z390development/z390?style=social)](https://github.com/z390development/z390/stargazers)  
+  🧮 Java-based portable IBM System/390 assembler emulator and runtime, executing High Level Assembler (HLASM) and COBOL cross-platform.
+
+- **[QWICS Architecture](https://github.com/pbrune1973/qwics)**  
+  [![Stars](https://img.shields.io/github/stars/pbrune1973/qwics?style=social)](https://github.com/pbrune1973/qwics/stargazers)  
+  🏗️ Quick Web-Based Interactive COBOL Service rehosting transactional COBOL workloads in Java EE using GnuCOBOL, WildFly, and PostgreSQL.
+
+---
+
+## 🛠 Modernization Strategies & Architectures
+
+1. **Rehosting (Lift & Shift)**: Move mainframe applications to cloud/x86 Virtual Machines without code changes using compilers or emulators (e.g., LzLabs SDM, Micro Focus Enterprise Server).
+2. **Replatforming**: Migrate data and middleware (CICS to Tomcat, VSAM to PostgreSQL/DB2 on cloud) while keeping core business logic intact.
+3. **Automated Refactoring**: Transform legacy COBOL/PL/I into modern Java Spring Boot or C# .NET microservices using deterministic AI engines (e.g., TSRI, Blu Age, Advanced).
+4. **Dual Run Parallel Execution**: Run legacy mainframe and modern cloud applications concurrently with real-time data replication to verify functional equivalence (e.g., Google Cloud Dual Run).
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! Please follow these simple guidelines:
+
+1. 🍴 **Fork the Repository**
+2. 🌿 **Create a Feature Branch** (`git checkout -b feature/awesome-tool`)
+3. 📝 **Add/Update Entry** in `README.md` maintaining table/formatting consistency.
+4. 📬 **Open a Pull Request** with a clear summary of changes.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Mainframe-Migration-Modernization&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Mainframe-Migration-Modernization&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring **Awesome Mainframe Migration & Modernization**! If this repository helped you in your legacy transformation journey, enterprise architecture planning, or COBOL refactoring research, please consider supporting the project:
+
+- 🌟 **Star this repository** to help others discover mainframe modernization tools.
+- 🔀 **Fork & Contribute** by opening pull requests to add new tools, platforms, or case studies.
+- 📢 **Share with your network** on LinkedIn, X, or developer forums.
+- ☕ **Sponsor on GitHub**: Support ongoing open-source research on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📜 Disclaimer
+
+- This is a **community-curated** open-source list for informational and educational purposes.
+- Enterprise mainframe modernization involves mission-critical core systems. Always conduct thorough functional equivalence testing and risk assessments before migration.
