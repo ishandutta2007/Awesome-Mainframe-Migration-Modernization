@@ -119,6 +119,10 @@ Curated open-source projects, COBOL compilers, mainframe emulators, parser libra
   [![Stars](https://img.shields.io/github/stars/pbrune1973/qwics?style=social)](https://github.com/pbrune1973/qwics/stargazers)  
   🏗️ Quick Web-Based Interactive COBOL Service rehosting transactional COBOL workloads in Java EE using GnuCOBOL, WildFly, and PostgreSQL.
 
+- **[ATLAS Toolkit](https://github.com/AccessInter/atlas-toolkit)**  
+  [![Stars](https://img.shields.io/github/stars/AccessInter/atlas-toolkit?style=social)](https://github.com/AccessInter/atlas-toolkit/stargazers)  
+  🔁 Open-source COBOL, Delphi and BizTalk translation patterns, each backed by an executable parity test, plus a TypeScript port of six AWS CardDemo programs (COBOL/CICS/VSAM) validated by 30 parity tests.
+
 ---
 
 ## 🛠 Modernization Strategies & Architectures
